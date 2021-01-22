@@ -21,10 +21,10 @@ int main(){
     omp_set_num_threads(omp_get_thread_num());
   
     // rozmiar macierzy
-    const int roz_M = 3;
+    const int size_M = 3;
 
-    Matrix<double> A (roz_M, roz_M, 0.0);   gen_random(A, -5, 5);
-    Matrix<double> B (roz_M, roz_M, 0.0);   gen_random(B, -5, 5);
+    Matrix<double> A (size_M, size_M, 0.0);   gen_random(A, -5, 5);
+    Matrix<double> B (size_M, size_M, 0.0);   gen_random(B, -5, 5);
 
     // Wynik macierzy na CPU i zmierzenie czasu
     auto start_CPU = Time::now();
