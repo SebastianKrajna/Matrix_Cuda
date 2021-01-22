@@ -1,2 +1,2 @@
 # Matrix_Cuda
-Matrix class using CUDA
+Matrix classes using CUDA and OMP
